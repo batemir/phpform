@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <form enctype="multipart/form-data" action="formHandle.php" method="POST">
-            <!-- Поле MAX_FILE_SIZE должно быть указано до поля загрузки файла -->
-           <!--<input type="hidden" name="MAX_FILE_SIZE" value="300000" />--> 
-            <!-- Название элемента input определяет имя в массиве $_FILES -->
+           <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
             Отправить этот файл: <input name="userfile" type="file" accept=".csv"/>
             <input type="submit" value="Отправить файл" />
         </form>
